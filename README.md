@@ -1,10 +1,25 @@
-# 参考资料
+# npm 包搭建流程
+
+> 本仓库基于rollup制作一个基础的npm开发包，并总结了相关过程，可根据自己的需求酌情修改
+
+
+## 创建tsconfig.json
+
+
 
 ### 包管理命令
 
 npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
 
 alias: verison
+
+### 许可证
+
+创建新文件 输入 LICENSE
+
+### 发布
+
+npm publish --access public
 
 ### 加入组织
 
