@@ -1,0 +1,9 @@
+.vscode
+demo/
+node_modules/
+src/
+.gitignore
+pnpm-lock.yaml
+rollup.config.ts
+tsconfig.json
+tsconfig.types.json
