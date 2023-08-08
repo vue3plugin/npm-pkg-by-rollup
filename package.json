@@ -1,7 +1,7 @@
 {
-  "name": "axios-use",
+  "name": "@v3p/npm-pkg-by-rollup",
   "version": "1.0.0-0",
-  "description": "",
+  "description": "npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]",
   "type": "module",
   "files": [
     "dist"
@@ -26,7 +26,7 @@
     "url": "git+https://github.com/vue3plugin/npm-pkg-by-rollup.git"
   },
   "author": "biancangming",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
@@ -35,5 +35,10 @@
     "rollup": "^3.27.2",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/vue3plugin/npm-pkg-by-rollup/issues"
+  },
+  "homepage": "https://github.com/vue3plugin/npm-pkg-by-rollup#readme",
+  "devDependencies": {}
 }
