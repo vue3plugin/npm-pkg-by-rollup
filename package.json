@@ -1,24 +1,24 @@
 {
   "name": "@v3p/npm-pkg-by-rollup",
   "version": "1.0.0-0",
-  "description": "npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]",
+  "description": "基于rollup的npm包模板",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/mjs/index.mjs",
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/npm-pkg-by-rollup.d.ts",
   "exports": {
     ".": {
       "import": "./dist/mjs/index.mjs",
       "require": "./dist/cjs/index.cjs",
-      "types": "./dist/types/index.d.ts"
+      "types": "./dist/npm-pkg-by-rollup.d.ts"
     }
   },
   "scripts": {
     "build": "rollup --config rollup.config.ts --configPlugin typescript",
-    "build-types": "tsc -b ./tsconfig.types.json"
+    "build-types": "tsc -b ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js"
   },
   "keywords": [],
   "repository": {
@@ -27,7 +27,12 @@
   },
   "author": "biancangming",
   "license": "MIT",
-  "dependencies": {
+  "bugs": {
+    "url": "https://github.com/vue3plugin/npm-pkg-by-rollup/issues"
+  },
+  "homepage": "https://github.com/vue3plugin/npm-pkg-by-rollup#readme",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.36.4",
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.2",
@@ -35,10 +40,5 @@
     "rollup": "^3.27.2",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
-  },
-  "bugs": {
-    "url": "https://github.com/vue3plugin/npm-pkg-by-rollup/issues"
-  },
-  "homepage": "https://github.com/vue3plugin/npm-pkg-by-rollup#readme",
-  "devDependencies": {}
+  }
 }

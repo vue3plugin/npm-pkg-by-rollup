@@ -17,12 +17,24 @@
 
 [^1]: rollupjs参考文档 https://rollupjs.org/introduction/
 
+打包配置参考[rollup.config.ts](https://github.com/vue3plugin/npm-pkg-by-rollup/blob/main/rollup.config.ts)
 
-## 创建tsconfig.json
+在`package.json`文件当中，分别添加如下参数
 
+- scripts 添加相关打包脚本
+- main 添加cjs模块引入
+- files 包分发包含的文件
+- exports 分模块化引入
 
+## 创建tsconfig.json/tsconfig.types.json
+
+`tsconfig.types.json` 用于打包类型文件输出
 
 ### 包管理命令
+
+`npm run build` 用于打包
+
+`npm run build-types` 用于打包类型
 
 npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
 
