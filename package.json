@@ -1,6 +1,6 @@
 {
   "name": "@v3p/npm-pkg-by-rollup",
-  "version": "1.0.2-0",
+  "version": "1.0.2",
   "description": "基于rollup的npm包模板",
   "type": "module",
   "files": [
