@@ -1,6 +1,6 @@
 {
   "name": "@v3p/npm-pkg-by-rollup",
-  "version": "1.0.1-0",
+  "version": "1.0.1-1",
   "description": "基于rollup的npm包模板",
   "type": "module",
   "files": [
@@ -20,7 +20,11 @@
     "build": "rollup --config rollup.config.ts --configPlugin typescript",
     "build-types": "tsc -b ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js"
   },
-  "keywords": ["一个橙子pro","rollup","typescript"],
+  "keywords": [
+    "一个橙子pro",
+    "rollup",
+    "typescript"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vue3plugin/npm-pkg-by-rollup.git"
