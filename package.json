@@ -1,6 +1,6 @@
 {
   "name": "@v3p/npm-pkg-by-vite",
-  "version": "1.0.3-0",
+  "version": "1.0.4-0",
   "description": "基于vite的npm包模板",
   "type": "module",
   "files": [
