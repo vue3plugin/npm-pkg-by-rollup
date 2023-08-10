@@ -18,7 +18,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js"
+    "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js",
+    "build-all": "npm run build && npm run build-types"
   },
   "keywords": [
     "一个橙子pro",
