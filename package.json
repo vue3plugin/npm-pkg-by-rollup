@@ -1,28 +1,29 @@
 {
-  "name": "@v3p/npm-pkg-by-rollup",
+  "name": "@v3p/npm-pkg-by-vite",
   "version": "1.0.2",
-  "description": "基于rollup的npm包模板",
+  "description": "基于vite的npm包模板",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/cjs/index.cjs",
-  "module": "./dist/mjs/index.mjs",
-  "types": "./dist/npm-pkg-by-rollup.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/mjs/index.mjs",
-      "require": "./dist/cjs/index.cjs",
-      "types": "./dist/npm-pkg-by-rollup.d.ts"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
-    "build": "rollup --config rollup.config.ts --configPlugin typescript",
-    "build-types": "tsc -b ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js"
+    "build": "vite build",
+    "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js"
   },
   "keywords": [
     "一个橙子pro",
-    "rollup",
+    "vue",
+    "vite",
     "typescript"
   ],
   "repository": {
@@ -37,12 +38,12 @@
   "homepage": "https://github.com/vue3plugin/npm-pkg-by-rollup#readme",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.36.4",
-    "@rollup/plugin-commonjs": "^25.0.3",
-    "@rollup/plugin-node-resolve": "^15.1.0",
-    "@rollup/plugin-typescript": "^11.1.2",
     "@types/node": "^20.4.8",
-    "rollup": "^3.27.2",
+    "@vitejs/plugin-vue": "^4.2.3",
     "tslib": "^2.6.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.8"
   }
 }
