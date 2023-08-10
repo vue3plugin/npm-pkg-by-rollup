@@ -22,5 +22,6 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           tag: beta
+          access: public
           package: package.json
           token: ${{ secrets.NPM_TOKEN }}
