@@ -17,6 +17,8 @@
     }
   },
   "scripts": {
+    "dev:demo": "cd example && vite",
+    "build:demo": "cd example && vite build",
     "build": "vite build",
     "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js",
     "build-all": "npm run build && npm run build-types"
@@ -46,5 +48,9 @@
     "vite": "^4.4.9",
     "vue": "^3.3.4",
     "vue-tsc": "^1.8.8"
+  },
+  "dependencies": {
+    "@tsconfig/node18": "^18.2.0",
+    "@vue/tsconfig": "^0.4.0"
   }
 }
