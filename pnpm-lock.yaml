@@ -2,13 +2,19 @@ lockfileVersion: 5.4
 
 specifiers:
   '@microsoft/api-extractor': ^7.36.4
+  '@tsconfig/node18': ^18.2.0
   '@types/node': ^20.4.8
   '@vitejs/plugin-vue': ^4.2.3
+  '@vue/tsconfig': ^0.4.0
   tslib: ^2.6.1
   typescript: ^5.1.6
   vite: ^4.4.9
   vue: ^3.3.4
   vue-tsc: ^1.8.8
+
+dependencies:
+  '@tsconfig/node18': 18.2.0
+  '@vue/tsconfig': 0.4.0
 
 devDependencies:
   '@microsoft/api-extractor': 7.36.4_@types+node@20.4.8
@@ -328,6 +334,10 @@ packages:
       string-argv: 0.3.2
     dev: true
 
+  /@tsconfig/node18/18.2.0:
+    resolution: {integrity: sha512-yhxwIlFVSVcMym3O31HoMnRXpoenmpIxcj4Yoes2DUpe+xCJnA7ECQP1Vw889V0jTt/2nzvpLQ/UuMYCd3JPIg==}
+    dev: false
+
   /@types/argparse/1.0.38:
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
     dev: true
@@ -466,6 +476,10 @@ packages:
   /@vue/shared/3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
     dev: true
+
+  /@vue/tsconfig/0.4.0:
+    resolution: {integrity: sha512-CPuIReonid9+zOG/CGTT05FXrPYATEqoDGNrEaqS4hwcw5BUNM2FguC0mOwJD4Jr16UpRVl9N0pY3P+srIbqmg==}
+    dev: false
 
   /@vue/typescript/1.8.8_typescript@5.1.6:
     resolution: {integrity: sha512-jUnmMB6egu5wl342eaUH236v8tdcEPXXkPgj+eI/F6JwW/lb+yAU6U07ZbQ3MVabZRlupIlPESB7ajgAGixhow==}

@@ -1,6 +1,6 @@
 {
   "name": "@v3p/npm-pkg-by-vite",
-  "version": "1.0.2",
+  "version": "1.0.5-0",
   "description": "基于vite的npm包模板",
   "type": "module",
   "files": [
@@ -17,8 +17,11 @@
     }
   },
   "scripts": {
+    "dev:demo": "cd example && vite",
+    "build:demo": "cd example && vite build",
     "build": "vite build",
-    "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js"
+    "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js",
+    "build-all": "npm run build && npm run build-types"
   },
   "keywords": [
     "一个橙子pro",
@@ -45,5 +48,9 @@
     "vite": "^4.4.9",
     "vue": "^3.3.4",
     "vue-tsc": "^1.8.8"
+  },
+  "dependencies": {
+    "@tsconfig/node18": "^18.2.0",
+    "@vue/tsconfig": "^0.4.0"
   }
 }
