@@ -1,6 +1,9 @@
 # 自建打包模板
 
 > 本项目由一个橙子pro，微信：bianbingdang123创建，基于vite创建的vue库文件打包模板，创建一些简单的npm库直接使用就好了
+
+项目整个搭建教程收录在：[制作npm包修炼指南
+](https://blog.csdn.net/a942242856/category_12404759.html)
 ### 命令
 
 `npm run dev:demo` 预览demo
