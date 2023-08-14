@@ -31,14 +31,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vue3plugin/npm-pkg-by-rollup.git"
+    "url": "git+https://github.com/vue3plugin/npm-pkg-by-vite.git"
   },
   "author": "biancangming",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vue3plugin/npm-pkg-by-rollup/issues"
+    "url": "https://github.com/vue3plugin/npm-pkg-by-vite/issues"
   },
-  "homepage": "https://github.com/vue3plugin/npm-pkg-by-rollup#readme",
+  "homepage": "https://github.com/vue3plugin/npm-pkg-by-vite#readme",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.36.4",
     "@types/node": "^20.4.8",
