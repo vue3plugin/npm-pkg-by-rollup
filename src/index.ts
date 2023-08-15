@@ -1,3 +1,4 @@
+import "./assets/index.css" // 没有用到基础样式，删除即可
 //@ts-ignore
 import Demo from "./Demo.vue"
 import { add } from "./utils"
