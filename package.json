@@ -17,8 +17,8 @@
     }
   },
   "scripts": {
-    "dev:demo": "cd example && vite",
-    "build:demo": "cd example && vite build",
+    "docs:dev": "vitepress dev src",
+    "docs:build": "vitepress build src",
     "build": "vite build",
     "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js",
     "build-all": "npm run build && npm run build-types"
@@ -43,6 +43,8 @@
     "@microsoft/api-extractor": "^7.36.4",
     "@types/node": "^20.4.8",
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.1",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
@@ -51,6 +53,7 @@
   },
   "dependencies": {
     "@tsconfig/node18": "^18.2.0",
-    "@vue/tsconfig": "^0.4.0"
+    "@vue/tsconfig": "^0.4.0",
+    "vitepress": "1.0.0-rc.4"
   }
 }
