@@ -6,10 +6,17 @@ on:
       - "main"
     paths:
       - "src/**"
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - "src/**"
 
 # 作业
 jobs:
-  build-example-dev:
+  build-docs:
+    permissions: 
+      contents: write
     runs-on: "windows-latest"
     strategy:
       matrix:
@@ -19,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "16.13.0"
-      - name: package example page
+      - name: package docs page
         run: |  
           npm i 
           npm run docs:build
