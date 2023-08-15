@@ -21,12 +21,12 @@ jobs:
       - name: package example page
         run: |  
           npm i 
-          npm run build:demo
+          npm run docs:build
       - name: push 
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
-          build_dir: example/dist
+          build_dir: src/.vitepress/dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

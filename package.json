@@ -18,7 +18,8 @@
   },
   "scripts": {
     "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
+    "docs:build": "vitepress build src --base /",
+    "docs:preview": "vitepress preview src",
     "build": "vite build",
     "build-types": "vue-tsc -p ./tsconfig.types.json && api-extractor run -c api-extractor.json && node scripts/cleanup.js",
     "build-all": "npm run build && npm run build-types"

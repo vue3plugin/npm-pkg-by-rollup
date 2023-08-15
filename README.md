@@ -31,3 +31,7 @@ npm publish --access public --tag [beta]
 ### 加入组织
 
 npm init --scope=v3p  (自行忽略)
+
+### 演示
+
+基于vitepress的演示文档
